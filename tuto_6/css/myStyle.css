@@ -1,0 +1,162 @@
+html {
+    background-image: url(../assets/wallpaper.gif);
+}
+body {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#main {
+    background-image: url(../assets/machine.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    min-height: 1000px;
+    margin: auto;
+    margin-top: 150px;
+    padding-top: 20px;
+    width: 800px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: black;
+}
+#info {
+    margin:auto;
+    text-align: center;
+    margin-top: 150px;
+}
+#money {
+    zoom: 100%;
+}
+#money.active {
+    zoom: 120%;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+#jackpot {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: initial;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 600px;
+    min-width: 600px;
+}
+#jackpot.win {
+    border-top: 5px solid gold;
+    border-bottom: 5px solid gold;
+}
+#jackpot.win .left {
+    border-left: 5px solid gold;
+}
+#jackpot.win .right {
+    border-right: 5px solid gold;
+}
+.wheel {
+    height:250px;
+    width:200px;
+    background-color: #dddd;
+    overflow:hidden;
+    position: relative;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: initial !important;
+}
+
+.case {
+    height:250px;
+    width:200px;
+    overflow:hidden;
+    position: absolute;
+}
+.case {
+    margin-top: 0px;
+}
+.case.turnDown {
+    margin-top: 250px;
+}
+.case.turnUp {
+    margin-top: -250px;
+}
+.case img {
+    width: 90%;
+    display: block;
+    margin:auto;
+    height: auto;
+    margin-top: 15%;
+}
+#loot-chart {
+    margin:auto;
+    margin-top: 200px;
+    margin-bottom: 80px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 5%;
+    color: white;
+}
+#loot-chart img {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+#logs {
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#logs img {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+@media (max-width: 1350px) {
+    #loot-chart {
+        margin:auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        position: initial;
+        top: initial;
+        left: initial;
+        margin-left: initial;
+        color: black;
+    }
+}
+
+#run-button-style {
+    margin: auto;
+    overflow:hidden;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+#run-button-style img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+}
+#run-button-style img{
+    display: initial;
+}
+#run-button-style .pressedButton{
+    display: none;
+}
+#run-button-style.pressed img{
+    display: none;
+}
+#run-button-style.pressed .pressedButton{
+    display: initial;
+}
+#gameInfo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
